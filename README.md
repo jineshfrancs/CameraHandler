@@ -1,7 +1,7 @@
 # CameraHandler
 Utility class to capture image from gallery or camera with image compression without reducing quality.This lib will reduce image size from 0.99mb to 46kb with same image quality.
 
-![Output sample](https://github.com/jineshfrancs/CameraHandler/blob/master/screens/screenshot_camera_handler.gif)
+![Output sample](https://github.com/jineshfrancs/CameraHandler/blob/master/screens/screen_camera_handler.gif)
 
 Create object for CameraHandler and call showDialogToCaptureImage() method to open Capture dialog
  ```
