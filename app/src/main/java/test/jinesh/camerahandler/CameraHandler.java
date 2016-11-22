@@ -39,7 +39,7 @@ public class CameraHandler extends Activity {
     public static final int MEDIA_TYPE_VIDEO = 2;
     public static int SELECT_FILE = 1;
     private Uri fileUri;
-    private static final String IMAGE_DIRECTORY_NAME = "EFuel";
+    private static final String IMAGE_DIRECTORY_NAME = "Test";
     private String filePath, fileName;
     private Activity activity;
     public static final int CAMERA_TYPE = -1;
@@ -68,7 +68,7 @@ public class CameraHandler extends Activity {
                     fileUri = getOutputMediaFileUri(MEDIA_TYPE_IMAGE);
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
                     // start the image capture Intent
-                    if(NullChecker.checkNotNull(activity))
+                    if(activity!=null)
                     activity.startActivityForResult(intent, CAMERA_CAPTURE_IMAGE_REQUEST_CODE);
 
                 } else if (items[item].equals("Choose from Gallery")) {
