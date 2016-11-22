@@ -8,9 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity implements CameraHandler.OnImageResultListner {
-    Button button;
+    TextView button;
     CameraHandler handler;
     ImageView imageView;
     @Override
@@ -18,7 +19,7 @@ public class MainActivity extends Activity implements CameraHandler.OnImageResul
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         handler=new CameraHandler(this);
-        button= (Button) findViewById(R.id.button);
+        button= (TextView) findViewById(R.id.button);
         imageView= (ImageView) findViewById(R.id.imageView);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
