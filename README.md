@@ -7,7 +7,6 @@ Add these permissions in AndroidManifest.xml
 ```
  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
- 
  ```
 Create object for CameraHandler and call showDialogToCaptureImage() method to open Capture dialog
  ```
