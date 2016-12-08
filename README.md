@@ -3,6 +3,12 @@ Utility class to capture image from gallery or camera with image compression wit
 
 ![Output sample](https://github.com/jineshfrancs/CameraHandler/blob/master/screens/screen_camera_handler.gif)
 
+Add these permissions in AndroidManifest.xml
+```
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+ 
+ ```
 Create object for CameraHandler and call showDialogToCaptureImage() method to open Capture dialog
  ```
  handler=new CameraHandler(this);
